@@ -51,23 +51,137 @@ const playRound = (player, computer) => {
     }
 };
 
-const game = () => {
+const playGame = () => {
 
-    let playerSelection = prompt(`Enter Rock, Paper, or Scissors`)
+    let playerSelection = prompt(`Enter Rock, Paper, or Scissors`);
 
     playRound(playerSelection, computerSelection);
     console.log(`Player: ${playerScore} Computer: ${computerScore}`);
 
-    while ((playerScore > 5) || (computerScore > 5)){
-        let playerSelection = prompt(`Enter Rock, Paper, or Scissors`)
+    if ((playerScore >= 5) || (computerScore >= 5)){
+        if (playerScore = 5){
+            console.log("You Won!");
+        } else if (computerScore = 5){
+            console.log("Oh no! The computer won.")
+        }
+    } else {
+        playerSelection = prompt(`Enter Rock, Paper, or Scissors again.`);
 
         playRound(playerSelection, computerSelection);
+        console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+
+        if ((playerScore >= 5) || (computerScore >= 5)){
+            if (playerScore = 5){
+                console.log("You Won!");
+            } else if (computerScore = 5){
+                console.log("Oh no! The computer won.")
+            }
+        } else {
+            playerSelection = prompt(`Enter Rock, Paper, or Scissors again.`);
+    
+            playRound(playerSelection, computerSelection);
+            console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+
+            if ((playerScore >= 5) || (computerScore >= 5)){
+                if (playerScore = 5){
+                    console.log("You Won!");
+                } else if (computerScore = 5){
+                    console.log("Oh no! The computer won.")
+                }
+            } else {
+                playerSelection = prompt(`Enter Rock, Paper, or Scissors again.`);
+        
+                playRound(playerSelection, computerSelection);
+                console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+
+                if ((playerScore >= 5) || (computerScore >= 5)){
+                    if (playerScore = 5){
+                        console.log("You Won!");
+                    } else if (computerScore = 5){
+                        console.log("Oh no! The computer won.")
+                    }
+                } else {
+                    playerSelection = prompt(`Enter Rock, Paper, or Scissors again.`);
+            
+                    playRound(playerSelection, computerSelection);
+                    console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+
+                    if ((playerScore >= 5) || (computerScore >= 5)){
+                        if (playerScore = 5){
+                            console.log("You Won!");
+                        } else if (computerScore = 5){
+                            console.log("Oh no! The computer won.")
+                        }
+                    } else {
+                        playerSelection = prompt(`Enter Rock, Paper, or Scissors again.`);
+                
+                        playRound(playerSelection, computerSelection);
+                        console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+
+                        if ((playerScore >= 5) || (computerScore >= 5)){
+                            if (playerScore = 5){
+                                console.log("You Won!");
+                            } else if (computerScore = 5){
+                                console.log("Oh no! The computer won.")
+                            }
+                        } else {
+                            playerSelection = prompt(`Enter Rock, Paper, or Scissors again.`);
+                    
+                            playRound(playerSelection, computerSelection);
+                            console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+
+                            if ((playerScore >= 5) || (computerScore >= 5)){
+                                if (playerScore = 5){
+                                    console.log("You Won!");
+                                } else if (computerScore = 5){
+                                    console.log("Oh no! The computer won.")
+                                }
+                            } else {
+                                playerSelection = prompt(`Enter Rock, Paper, or Scissors again.`);
+                        
+                                playRound(playerSelection, computerSelection);
+                                console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+
+                                if ((playerScore >= 5) || (computerScore >= 5)){
+                                    if (playerScore = 5){
+                                        console.log("You Won!");
+                                    } else if (computerScore = 5){
+                                        console.log("Oh no! The computer won.")
+                                    }
+                                } else {
+                                    playerSelection = prompt(`Enter Rock, Paper, or Scissors again.`);
+                            
+                                    playRound(playerSelection, computerSelection);
+                                    console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+
+                                    if ((playerScore >= 5) || (computerScore >= 5)){
+                                        if (playerScore = 5){
+                                            console.log("You Won!");
+                                        } else if (computerScore = 5){
+                                            console.log("Oh no! The computer won.")
+                                        }
+                                    } else {
+                                        playerSelection = prompt(`Enter Rock, Paper, or Scissors again.`);
+                                
+                                        playRound(playerSelection, computerSelection);
+                                        console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+
+
+
 }
 
 let computerSelection = computerPlay();
 let playerSelection;
-let playerScore;
-let computerScore;
+let playerScore = 0;
+let computerScore = 0;
 
-game();
+playGame();
