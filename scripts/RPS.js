@@ -53,7 +53,7 @@ const playRound = (player, computer) => {
 
 const playGame = () => {
 
-    let playerSelection = prompt(`Enter Rock, Paper, or Scissors`);
+    let playerSelection = prompt(`Enter Rock, Paper, or Scissors. Please open the developer console with F12 to see your results.`);
 
     playRound(playerSelection, computerSelection);
     console.log(`Player: ${playerScore} Computer: ${computerScore}`);
